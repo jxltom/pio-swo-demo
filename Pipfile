@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+
+[requires]
+python_version = "3"
+
+[scripts]
+build = "platformio run -e default"
+upload = "platformio run -t upload -e default"
+debug = "platformio debug --interface=gdb -x .pioinit -e default"
+upload-cmsisdap = "platformio run -t upload -e cmsisdap"
+debug-cmsisdap = "platformio debug --interface=gdb -x .pioinit -e cmsisdap"
