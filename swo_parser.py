@@ -137,6 +137,9 @@ class StreamManager:
 
 #### Main program ####
 def swo_parser_main():
+    import time
+    time.sleep(1)
+
     # Set up the socket to the OpenOCD Tcl server
     HOST = 'localhost'
     PORT = 6666
